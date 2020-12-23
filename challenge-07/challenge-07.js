@@ -45,6 +45,11 @@ console.log( 'Números pares entre 10 e 20:' );
 Na mesma ideia do exercício acima: mostre agora os números ímpares.
 */
 console.log( 'Números ímpares entre 10 e 20:' );
+var myVar = 10;
+while ( myVar <= 20){
+  myVar % 2 != 0 ? console.log(myVar):'';
+  myVar++;
+}
 // ?
 
 /*
@@ -54,7 +59,14 @@ Só vamos mudar o range:
 - No segundo "for", mostre os números ímpares entre 111 e 125, inclusive eles.
 */
 console.log( 'Números pares entre 100 e 120:' );
+for( myVar = 100; myVar <= 120;myVar++){
+  myVar % 2 == 0 ? console.log(myVar):'';
+  myVar++;
+}
 // ?
 
 console.log( 'Números ímpares entre 111 e 125:' );
-// ?
+for( myVar = 111; myVar <= 125;myVar++){
+  myVar % 2 != 0 ? console.log(myVar):'';
+  myVar++;
+}
